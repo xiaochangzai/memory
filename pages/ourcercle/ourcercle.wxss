@@ -1,0 +1,221 @@
+/* pages/ourcercle/ourcercle.wxss */
+.top-menus{
+  width: 92.2vw;
+  height: 14.3vw;
+  box-sizing: border-box;
+  padding-top: 3.2vw;
+  margin: 0 auto;
+}
+.top-menus navigator{
+  width: 24.8vw;
+  height: 8.3vw;
+  display: block;
+  float: left;
+  background-color: #fde500;
+  border-radius: 4.15vw;
+  text-align: center;
+  font-size: 3.5vw;
+  line-height: 8.3vw;
+}
+.top-menus navigator image{
+  width: 1.8vw;
+  height: 3.2vw;
+  display: block;
+  float: left;
+  margin-left: 3vw;
+  margin-top: 2.7vw;
+}
+.top-menus navigator text{
+  display: block;
+  float: left;
+  height: 8.3vw;
+  line-height: 8.3vw;
+  padding-left: 1.6vw;
+
+}
+.top-menus .head-img{
+  width: 6.7vw;
+  height: 6.7vw;
+  float: left;
+  margin-top: 0.8vw;
+  border-radius: 50%;
+  margin-left: 6.4vw;
+}
+.invite{
+  width: 19.3vw;
+  height: 8.3vw;
+  background-color: #fde500;
+  border-radius: 4.15vw;
+  float: left;
+  text-align: center;
+  font-size: 3.6vw;
+  color: #262725;
+  line-height: 8.3vw;
+  margin-left: 17vw;
+}
+.invite text{
+  display: block;
+  float: left;
+  height: 8.3vw;
+}
+.invite text:first-child{
+  padding-left: 3.4vw;
+  font-size: 6vw;
+  line-height: 7vw;
+}
+.setting{
+  width: 17.3vw;
+  height: 9.4vw;
+  float: left;
+  padding-left: 3vw; 
+  box-sizing: border-box;
+  font-size: 3.2vw;
+}
+.setting image{
+  width: 4.4vw;
+  height: 4.4vw;
+  display: block;
+  float: left;
+  margin-top: 2.3vw;
+}
+.setting text{
+  height: 9.4vw;
+  line-height: 9.4vw;
+  display: block;
+  float: left;
+  padding-left: 1.6vw;
+}
+.item{
+  width: 92.2vw;
+  height: 66.6vw;
+  margin: 0 auto;
+}
+.item .cover-img{
+  width: 92.2vw;
+  height: 43vw;
+  display: block;
+  border-radius: 2vw; 
+}
+.item .title{
+  height: 11.6vw;
+  box-sizing: border-box;
+  padding-top: 3.4vw;
+  font-size: 4.3vw;
+  color: #313131;
+  }
+  .item .title text{
+    display: block;
+    float: left;
+    padding-right: 4.3vw;
+  }
+  .item .title image{
+    width: 4.4vw;
+    height: 4.3vw;
+    display: block;
+    float: left;
+  }
+  .num-box{
+    height: 12vw;
+  }
+  .num-box .num{
+    height: 8vw;
+    line-height: 8vw;
+    display: block;
+    color: #939393;
+    float: left;
+    padding-right: 3.8vw;
+    font-size: 3.3vw;
+  }
+  .num-box .num.last-child{
+    padding-left: 4vw;
+  }
+  .num-box .line{
+    width: 0.4vw;
+    height: 4vw;
+    margin-top: 1.8vw;
+    display: block;
+    float: left;
+    background-color: #cacaca;
+  }
+  .num-box .head-img{
+    width: 8.4vw;
+    height: 8.4vw;
+    display: block;
+    float: right;
+    border-radius: 50%;
+  }
+  .num-box .go-right{
+    width: 2.9vw;
+    height: 4.9vw;
+    display: block;
+    float: right;
+    transform: rotate(180deg);
+    margin-top: 1.8vw;
+    margin-left: 2.3vw;
+  }
+  .bottom-box{
+    height:81.5vw;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    padding-top: 17.6vw;
+  }
+  .bottom-box .point-out{
+    height: 6vw;
+    color: #999999;
+    font-size: 3.6vw;
+    text-align: center;
+  }
+  .bottom-box .upload{
+    width: 53.2vw;
+    height: 10.5vw;
+    display: block;
+    border-radius: 5.25vw;
+    background-color: #fde500;
+    color: #232425;
+    border: unset;
+    margin-top: 15.4vw;
+  }
+  .bottom-box .upload image{
+    width:4.7vw;
+    height: 3.9vw;
+    display: block;
+    float: left;
+    margin-top: 3.3vw;
+    margin-left: 15vw;
+  }
+  .bottom-box .upload text{
+    height: 10.5vw;
+    line-height: 10.5vw;
+    padding-left: 1.6vw;
+    font-size: 3.5vw;
+    display: block;
+    float: left;
+  }
+  .bottom-box .invite-btn{
+    width: 53.7vw;
+    height: 11vw;
+    box-sizing: border-box;
+    border: #636363 0.2vw solid;
+    border-radius: 5.5vw;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: block;
+    margin-top: 2.4vw;
+  }
+  .bottom-box .invite-btn image{
+    width: 4.1vw;
+    height: 4.6vw;
+    display: block;
+    float: left;
+    margin-top: 2.9vw;
+    margin-left: 15vw;
+  }
+.bottom-box .invite-btn text{
+  height: 10.4vw;
+  line-height: 10.4vw;
+  padding-left:  1.9vw;
+  display: block;
+  float: left;
+  font-size: 3.7vw;
+  color: #656565;
+}

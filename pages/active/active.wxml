@@ -1,0 +1,9 @@
+<!--pages/active/active.wxml-->
+<view class='wrap'>
+  <view class='item' wx:for="{{actives}}">
+    <image class='bg-img' src='{{item.coverImage}}'></image>
+    <image class='over' src='../../img/icon-over.png'></image>
+  </view>
+
+  
+</view>

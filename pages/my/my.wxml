@@ -1,0 +1,53 @@
+<!--pages/my/my.wxml-->
+<view class='header'>
+<image class='bg' src='../../img/headbg.jpg'></image>
+  <view class='modal'>
+    <image class='head-img'></image>
+    <view class='info-box'>
+      <view class='title'>数据传输助手</view>
+      <view class='score'>
+        积分
+        <text>10</text>
+        <navigator>赚积分</navigator>
+      </view>
+      <view class='used'>已使用6.15M</view>
+    </view>
+    <button>已连续签到1天</button>
+  </view>
+</view>
+<navigator class='menu-item'>
+  <image src='../../img/icon-menu1.png'></image>
+  <text>积分商城</text><text class='new'>NEW</text>
+  <image src='../../img/icon-go.png'></image>
+</navigator>
+<navigator class='menu-item'>
+  <image src='../../img/icon-menu2.png'></image>
+  <text>我的动态</text>
+  <image src='../../img/icon-go.png'></image>
+</navigator>
+<view class='line'></view>
+<navigator class='menu-item pass-lock'>
+  <image src='../../img/icon-menu3.png'></image>
+  <text>相册密码锁</text>
+  <switch></switch>
+</navigator>
+<navigator class='menu-item'>
+  <image src='../../img/icon-menu4.png'></image>
+  <text>电脑端同步</text>
+  <image src='../../img/icon-go.png'></image>
+</navigator>
+<navigator class='menu-item'>
+  <image src='../../img/icon-menu5.png'></image>
+  <text>安全保障</text>
+  <image src='../../img/icon-go.png'></image>
+</navigator>
+<navigator class='menu-item'>
+  <image src='../../img/icon-menu6.png'></image>
+  <text>关于亿年</text>
+  <image src='../../img/icon-go.png'></image>
+</navigator>
+<navigator class='menu-item'>
+  <image src='../../img/icon-menu7.png'></image>
+  <text>用户反馈</text>
+  <image src='../../img/icon-go.png'></image>
+</navigator>

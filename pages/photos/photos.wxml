@@ -1,0 +1,29 @@
+<!--pages/photos/photos.wxml-->
+<view class='top'>
+  <input placeholder='点击输入相册名称搜索'></input>
+  <image src='../../img/icon-search.png' class='image'></image>
+  <image class='message' src='../../img/icon-message.png'></image>
+</view>
+<view class='big-title'>共享美好瞬间</view>
+<view class='small-tit'>和家人、朋友、同学共同存放照片</view>
+<view class='content-message'>您可以根据任意主题创建相册，</view>
+<view class='content-message'>相册中的照片j将以原图保存,永不过期</view>
+<button class='know-about'><image src='../../img/icon-know-about.png'></image>快速了解</button>
+<button class='create-photos'>
+  <image src='../../img/icon-create.png'></image>
+  <text>创建我的相册</text>
+</button>
+<navigator class='adv' url='../active/active'>
+  <image src='../../img/adv.jpg'></image>
+</navigator>
+
+<navigator class='photos-item'>
+  <image src='../../img/cover.jpg'></image>
+  <view class='btm-tit'>
+    <text class='num'>123</text>
+    <view class='view-num'>
+      <text>1</text>
+      <image src='../../img/icon-peoples.png'></image>
+    </view>
+  </view>
+</navigator>

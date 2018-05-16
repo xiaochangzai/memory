@@ -1,0 +1,11 @@
+<!--pages/types/types.wxml-->
+<view class='wrap'>
+  <view class='title'>请选择相册类型</view>
+  <view class='list'>
+    <text wx:for="{{typeArr}}" class="{{item.selected?'selected':''}}" data-index='{{index}}' bindtap='selectTag'>{{item.name}}</text>
+  </view>
+  <button class='{{currentIndex >= 0 ? "active":""}}' bindtap="createPhotos">
+    <image src='../../img/icon-create.png'></image>
+    <text>创建共享相册</text>
+  </button>
+</view>

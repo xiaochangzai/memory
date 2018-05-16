@@ -1,0 +1,28 @@
+/* pages/active/active.wxss */
+.wrap{
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding-top: 2.5vw;
+}
+.item{
+  width: 92.4vw;
+  height: 35.2vw;
+  border-radius: 0.7vw;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 2.5vw;
+}
+.item .bg-img{
+  width: inherit;
+  height: inherit;
+}
+.item .over{
+  width: 19.3vw;
+  height: 13.6vw;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/types/types",
+    "pages/photos/photos",
+    "pages/active/active",
+    "pages/ourcercle/ourcercle",
+    "pages/share/share",
+    "pages/clock/clock",
+    "pages/my/my",
+    "pages/index/index",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "img/icon-photos-active.png",
+        "iconPath": "img/icon-photos.png",
+        "pagePath": "pages/photos/photos",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "img/icon-clock-active.png",
+        "iconPath": "img/icon-clock.png",
+        "pagePath": "pages/clock/clock",
+        "text": "时刻"
+      },
+      {
+        "selectedIconPath": "img/icon-active-active.png",
+        "iconPath": "img/icon-active.png",
+        "pagePath": "pages/active/active",
+        "text": "活动"
+      },
+      {
+        "selectedIconPath": "img/icon-my-active.png",
+        "iconPath": "img/icon-my.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+/* pages/clock/clock.wxss */
+.title{
+  height: 9.7vw;
+  box-sizing: border-box;
+  line-height: 9.7vw;
+  color: #494949;
+  font-size: 3.2vw;
+  text-align: center;
+}
+.content{
+  width: 100vw;
+  /* background-color: #ea4f4f; */
+   -moz-column-count:2; /* Firefox */
+  -webkit-column-count:2; /* Safari 和 Chrome */
+  column-count:2;
+  box-sizing: border-box;
+  padding: 0 2.8vw;
+}
+.content .item{
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+  overflow: hidden;
+}
+.content .item text{
+  color: #989898;
+  font-size: 3vw;
+  display: block;
+  text-align: center;
+}

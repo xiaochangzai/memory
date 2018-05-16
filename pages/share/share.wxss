@@ -1,0 +1,78 @@
+/* pages/share/share.wxss */
+.header{
+  width:100vw;
+  height: 100vw;
+  position: relative;
+}
+.header .header-bg{
+  width: 100vw;
+  height: 100vw;
+}
+.header .modal-bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding-top: 9vw;
+  color: #ffffff;
+}
+.header .modal-bg .head-box{
+  width: 21.7vw;
+  height: 21.7vw;
+  box-sizing: border-box;
+  border: #ffffff 0.2vw solid;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding-top: 0.9vw;
+}
+.header .modal-bg .head-box image{
+  width: 19.3vw;
+  height: 19.3vw;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+.header .modal-bg .nick-name{
+  height: 16.4vw;
+  font-size: 7.8vw;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 4vw;
+}
+.header .modal-bg .xc{
+  height: 8.4vw;
+  font-size: 3.8vw;
+  text-align: center;
+}
+.header .modal-bg .join-us{
+  height: 9.4vw;
+  text-align: center;
+  font-size: 5vw;
+}
+.share{
+  width: 45vw;
+  height: 10.4vw;
+  background-color: #4fc442;
+  margin-top: 6.4vw;
+}
+.share image{
+  width: 5.6vw;
+  height: 4.6vw;
+  display: block;
+  float: left;
+  margin-top: 2.9vw;
+  margin-left: 2vw;
+}
+.share text{
+  font-size: 3.4vw;
+  color: #ffffff;
+  padding-left: 1.6vw;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  height: 10.4vw;
+  line-height: 10.4vw;
+}

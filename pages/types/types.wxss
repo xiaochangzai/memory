@@ -1,0 +1,64 @@
+/* pages/types/types.wxss */
+.wrap{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.title{
+  height: 17vw;
+  box-sizing: border-box;
+  padding-top: 9vw;
+  font-size: 4vw;
+  padding-left: 6vw;
+}
+.list{
+  box-sizing: border-box;
+  padding-left: 4.8vw;
+}
+.list text{
+  width: 17.9vw;
+  height: 9vw;
+  background-color: #f8f8f8;
+  border-radius: 4.5vw;
+  display: block;
+  float: left;
+  text-align: center;
+  line-height: 9vw;
+  font-size: 3.3vw;
+  margin-top: 4.8vw;
+  margin-right: 5.7vw;
+}
+.list{
+  overflow-y: auto;
+}
+.list text.selected{
+  background-color: #ffe500;
+}
+button{
+  width: 92vw;
+  height:11.6vw;
+  background-color: #cecece;
+  border-radius: 5.8vw;
+  margin-top: 7vw;
+}
+button.active{
+  background-color: #ffe500;
+}
+button::after{
+  border: unset;
+}
+button image{
+  width: 4.2vw;
+  height: 4vw;
+  display: block;
+  float: left;
+  margin: 3.8vw 0 0 30.4vw;
+}
+button text{
+  display: block;
+  float: left;
+  padding-left: 2.1vw;
+  height: 11.6vw;
+  line-height: 11.6vw;
+  font-size: 3.8vw;
+}
