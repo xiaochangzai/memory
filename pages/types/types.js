@@ -125,6 +125,7 @@ Page({
    * 创建相册
    */
   createPhotos: function(){
+    debugger;
     if(this.data.currentIndex < 0){
       return;
     }

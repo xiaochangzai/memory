@@ -1,0 +1,50 @@
+/* components/inputComponent/inputComponent.wxss */
+.modal-bg{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+}
+.input{
+  width: 100vw;
+  height: 12.5vw;
+  box-sizing: border-box;
+  padding-top: 2.9vw;
+  background-color: #ffffff;
+  position: fixed;
+  padding-left: 2.3vw;
+   bottom: 0; 
+}
+.input input{
+  width: 74vw;
+  box-sizing: border-box;
+  height: 7.5vw;
+  display: block;
+  float: left;
+  background-color: #f5f5f5;
+  border-radius: 3.75vw;
+  padding-left: 3.7vw;
+  padding-right: 3.3vw;
+  line-height: 7.5vw;
+  color: #0a0a0a;
+  font-size: 3.2vw;
+}
+.input button{
+  width: 17.5vw;
+  height: 7.5vw;
+  box-sizing: border-box;
+  background-color: #fde700;
+  display: block;
+  border-radius: 3.75vw;
+  margin-top: 0.3vw;
+  float: left;
+  margin-left: 3.9vw;
+  font-size: 3.3vw;
+}
+.input button::after{
+  border: unset;
+  padding: unset;
+}

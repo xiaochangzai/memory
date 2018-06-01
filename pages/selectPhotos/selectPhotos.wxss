@@ -1,0 +1,45 @@
+/* pages/selectPhotos/selectPhotos.wxss */
+.wrap{
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-top: #eceff6 2vw solid;
+}
+.item{
+  height: 10.7vw;
+  border-bottom: #c6c6c6 0.2vw solid;
+  box-sizing: border-box;
+  padding-left: 2.6vw;
+  padding-right: 2.3vw;
+}
+.item text{
+  width: 88.5vw;
+  height: 10.5vw;
+  line-height: 10.5vw;
+  color: #111111;
+  font-size: 3.3vw;
+  float: left;
+  display: block
+}
+.all-photos{
+  max-height: 133vw;
+  border-top: #eceff6 2vw solid;
+  min-height: 2vw;
+}
+
+button.submit{
+  width: 94.7vw;
+  height: 9vw;
+  background-color: #fdf274;
+  border-radius: 1vw;
+  position: fixed;
+  bottom: 2.6vw;
+  font-size: 3.5vw;
+  color: #221c07;
+  margin-left: 2.65vw;
+  display: block;
+}
+button.submit::after{
+  border: unset;
+}

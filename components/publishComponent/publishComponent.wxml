@@ -1,0 +1,57 @@
+
+<view class='pub-box'>
+  <view class='tit'>
+    <image class='head' src='{{info.headImg}}'></image>
+    <view class='nick-box'>
+      <view class='nick-name'>{{info.nickName}}</view>
+      <view class='place'><text decode='true'>17小时前 &nbsp;&nbsp;&nbsp; {{info.location}}</text></view>
+    </view>
+    <image class='tit-menu' src='../../img/icon-tit-menu.png' bindtap='showSubmenu'></image>
+  </view>
+  <view class='message-box'>{{info.message}}</view>
+  <view class='img-box size{{pathSize}}'>
+    <view class='image' wx:for="{{info.paths}}" wx:key="{{index}}"><image src='{{item}}'></image></view>
+  </view>
+  <view class='components'>
+    <view class='component-item' wx:for="{{info.commments}}" data-id="{{item.vrId}}">
+      <text class='nick-name'>{{item.nickName}}:</text>
+      <text class='content'>{{item.content}}</text>
+    </view>
+    
+  </view>
+  <view class='btm-box'>
+    <view class='agree {{info.agreed ? "agreed":""}}' bindtap='agree'>
+      <text>{{info.agreeNum}}</text>
+      <image src='../../img/icon-agree.png'></image>
+    </view>
+    <image class='talk' src='../../img/icon-talk.png' bindtap='talk'></image>
+    <image class='share' src='../../img/icon-share.png'></image>
+  </view>
+  
+</view>
+
+<view class='modal-bg {{showModal?"show":""}}' wx:if="{{showModal}}">
+  <view class='bottom-menus'>
+    <view class='title'>更多功能</view>
+    <view class='item' bindtap='downLoadPhotos'>
+      <text>原图下载</text>
+      <image src='../../img/icon-go.png'></image>
+    </view>
+    <view class='item' bindtap='asycToOther'>
+      <text>同步到其他相册</text>
+      <image src='../../img/icon-go.png'></image>
+    </view>
+    <view class='item' bindtap='addTop'>
+      <text>置顶</text>
+      <image src='../../img/icon-go.png'></image>
+    </view>
+    <view class='item' bindtap='delete'>
+      <text>删除</text>
+      <image src='../../img/icon-go.png'></image>
+    </view>
+    
+    <view class='close' bindtap='closeModal'>+</view>
+  </view>
+</view>
+
+<inputComponent id="input" bindsend="send"></inputComponent>

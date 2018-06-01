@@ -1,0 +1,22 @@
+/* pages/test/test.wxss */
+.wrap{
+  background-color: #f1f1f1;
+  padding-top: 29vw;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+button[type=primary]{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 80%;
+  margin-left: 10%;
+  display: block;
+}
+.input{
+  background-color: #cccccc;
+  position: fixed;
+  bottom: 0;
+  left: 20vw;
+}

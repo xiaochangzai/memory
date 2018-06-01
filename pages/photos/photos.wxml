@@ -9,7 +9,7 @@
 <view class='content-message'>您可以根据任意主题创建相册，</view>
 <view class='content-message'>相册中的照片j将以原图保存,永不过期</view>
 <button class='know-about'><image src='../../img/icon-know-about.png'></image>快速了解</button>
-<button class='create-photos'>
+<button class='create-photos' bindtap='createPhotos'>
   <image src='../../img/icon-create.png'></image>
   <text>创建我的相册</text>
 </button>
@@ -17,13 +17,15 @@
   <image src='../../img/adv.jpg'></image>
 </navigator>
 
-<navigator class='photos-item'>
-  <image src='../../img/cover.jpg'></image>
+<navigator class='photos-item' wx:for="{{photosArr}}" url='../ourcercle/ourcercle?id={{item.vrId}}'>
+  <image src='{{item.coverImage}}'></image>
   <view class='btm-tit'>
-    <text class='num'>123</text>
+    <text class='num'>{{item.name}}</text>
     <view class='view-num'>
-      <text>1</text>
+      <text>{{item.peopleNum}}</text>
       <image src='../../img/icon-peoples.png'></image>
     </view>
   </view>
 </navigator>
+
+<loginCompnent id="authorieze" bindagree="agree"></loginCompnent>

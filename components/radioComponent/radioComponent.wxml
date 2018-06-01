@@ -1,0 +1,4 @@
+<!--pages/radioComponent/radioComponent.wxml-->
+<label class='radio {{checked?"checked" : ""}}' bindtap='toggleCheck'>
+  <image src='../../img/icon-yes.png'></image>
+</label>

@@ -1,0 +1,7 @@
+<!--components/inputComponent/inputComponent.wxml-->
+<view class='modal-bg' wx:if="{{isShow}}">
+  <view class='input'>
+  <input type='text' focus='{{isFocus}}' confirm-type="send" bindinput='input' bindconfirm="send"></input>
+  <button bindtap='send'>发送</button>
+</view>
+</view>

@@ -1,0 +1,10 @@
+<!--components/progressComponent/progressComponent.wxml-->
+<view class='progress' wx:if="{{isShow}}">
+  <view class='title'>
+    正在上传{{progressNum}}%
+    <text>{{message}}</text>
+  </view>
+  <view class='progress-bar'>
+    <view class='real-progress' style='width:{{progressNum}}%'></view>
+  </view>
+</view>

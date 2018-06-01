@@ -1,0 +1,17 @@
+<!--pages/test/test.wxml
+<button type='primary' bindtap='showMenu'>显示</button>
+<uploadMenusComponent id="menus"></uploadMenusComponent>
+
+<radioComponent bindchange="radioChange"></radioComponent>
+
+
+<progressComponent id="progress" message="分享美好瞬间"></progressComponent>
+
+<button type='primary' bindtap='upload'>上传</button>
+
+
+-->
+<publishComponent></publishComponent>
+<inputComponent id="input" bindsend="send"></inputComponent>
+<button type='primary' bindtap='focusOn'>评论</button>
+

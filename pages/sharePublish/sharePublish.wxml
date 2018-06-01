@@ -1,0 +1,22 @@
+<!--pages/sharePublish/sharePublish.wxml-->
+<scroll-view class='scroll'>
+  <view class='header'>
+    <image class='headerbg' src='../../img/headerbg.jpg'></image>
+    <view class='info-box'>
+      <image src='../../img/headImg.jpg'></image>
+      <view class='nick-name'>数据传输助手</view>
+      <view class='time'><text decode='decode'>2018-05-25 &nbsp; | &nbsp; 火星</text></view>
+    </view>
+    <view class='message'>
+      哈哈😁
+    </view>
+    <view class='image-list'>
+      <image src='../../img/header-bg.png'></image>
+    </view>
+  </view>
+</scroll-view>
+<view class='bottom-block'>
+  <button class='invite'>分享故事并邀请</button>
+  <button class='share'>分享故事给好友</button>
+  <view class='txt'>生成图片分享朋友圈</view>
+</view>

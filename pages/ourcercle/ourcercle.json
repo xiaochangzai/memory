@@ -1,1 +1,6 @@
-{}
+{
+  "usingComponents": {
+    "uploadMenusComponent": "../../components/uploadMenusComponent/uploadMenusComponent",
+    "publishComponent": "../../components/publishComponent/publishComponent"
+  }
+}

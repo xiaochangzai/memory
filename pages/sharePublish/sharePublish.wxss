@@ -1,0 +1,91 @@
+/* pages/sharePublish/sharePublish.wxss */
+.scroll{
+  height: 113.5vw;
+}
+.header{
+  height: 57.4vw;
+  position: relative;
+}
+.header .headerbg{
+  height: 57.4vw;
+  width: 100vw;
+}
+.header .info-box{
+  width: 100vw;
+  height: 57.4vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding-top: 10vw;
+}
+.header .info-box image{
+  width: 14.6vw;
+  height: 14.6vw;
+  display: block;
+  margin: 0 auto;
+  border-radius: 7.3vw;
+  background-color: #ffffff; 
+}
+.header .info-box .nick-name{
+  height: 14vw;
+  line-height: 14vw;
+  color: #ffffff;
+  text-align: center;
+  font-size: 4.6vw;
+  font-weight: bold;
+}
+.header .info-box .time{
+  height: 8vw;
+  font-size: 3vw;
+  text-align: center;
+  color: #ffffff;
+}
+.message{
+  height: 10vw;
+  box-sizing: border-box;
+  padding-left: 9vw;
+  font-size: 3.6vw;
+}
+.image-list{
+  width: 100vw;
+}
+.image-list image{
+  width: 100vw;
+  height: auto;
+}
+.bottom-block{
+  width: 100vw;
+  height: 46.5vw;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding-top: 4vw;
+}
+.bottom-block button{
+  width: 63.4vw;
+  height: 10.4vw;
+  border-radius: 5.2vw;
+  color: #45433f;
+  font-size: 3.6vw;
+}
+.bottom-block button.invite{
+  background-color: #fde500;
+}
+.bottom-block button::after{
+  border: unset;
+}
+.bottom-block button.share{
+  margin-top: 3.7vw;
+  color: #4f4f4f;
+  background-color: #ffffff;
+  border: #6f6f6f 0.2vw solid;
+}
+.bottom-block .txt{
+  height: 17.8vw;
+  line-height: 17.8vw;
+  color: #8a8a8a;
+  font-size: 3.5vw;
+  text-align: center;
+}

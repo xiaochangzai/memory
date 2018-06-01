@@ -1,0 +1,133 @@
+/* pages/download/download.wxss */
+.title{
+  width: 100vw;
+  height: 11.3vw;
+  box-sizing: border-box;
+  padding-top: 4.6vw;
+  text-align: center;
+  color: #4d4d4d;
+  font-size: 3vw;
+}
+.content{
+  overflow-y: auto;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: 2.5vw;
+}
+.content .image-box{
+  width: 30.8vw;
+  height: 30.8vw;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.content .image-box text{
+  width: 4.7vw;
+  height: 4.7vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  text-align: center;
+  line-height: 4.7vw;
+  border-radius: 2.35vw;
+  position: absolute;
+  top: 1vw;
+  right: 2vw;
+  font-size: 2.7vw;
+  font-family: "宋体";
+}
+.content .image-box text.checked{
+  color: #2f3036;
+  background-color: #ffe400;
+}
+.btm-menus{
+  width: 100vw;
+  height: 12.7vw;
+  box-sizing: border-box;
+  border-top: #efefef 0.2vw solid;
+  padding-top: 2.7vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.btm-menus button.return{
+  width: 21vw;
+  height: 7.5vw;
+  box-sizing: border-box;
+  background-color: #ededed;
+  margin-left: 2.3vw;
+  border-radius: 0.3vw;
+  padding: unset;
+  float: left;
+}
+.btm-menus button.return image{
+  width: 1.8vw;
+  height: 3vw;
+  display: block;
+  float: left;
+  margin-top: 2vw;
+  margin-left: 4vw;
+  transform: rotate(180deg);
+}
+.btm-menus button.return text{
+  width: 15vw;
+  height: 7.5vw;
+  box-sizing: border-box;
+  padding-left: 2vw;
+  line-height: 7.5vw;
+  font-size: 3vw;
+  display: block;
+  float: left;
+  text-align: left;
+  color: #838383;
+}
+.btm-menus text.check-box{
+  width: 4.7vw;
+  height: 4.7vw;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #b2b2b2;
+  color: #ffffff;
+  font-size: 3vw;
+  line-height: 4.7vw;
+  border-radius: 2.35vw;
+  display: block;
+  float: left;
+  font-family: "宋体";
+  margin-left: 11.4vw;
+  margin-top: 1.4vw;
+}
+.btm-menus text.check-box.checked{
+  color: #2e303a;
+  background-color: #fee500;
+}
+.btm-menus label{
+  width: 19vw;
+  height: 6.7vw;
+  box-sizing: border-box;
+  padding-top: 1.9vw;
+  padding-left: 0.7vw;
+  font-size: 3.4vw;
+  display: block;
+  float: left;
+}
+.btm-menus text.cancle{
+  width: 18vw;
+  height: 6.7vw;
+  box-sizing: border-box;
+  padding-top: 1.9vw;
+  font-size: 3.4vw;
+  float: left;
+  display: block;
+}
+.btm-menus button.download-soon{
+  width: 21vw;
+  height: 7.5vw;
+  background-color: #fde500;
+  font-size: 3.2vw;
+  display: block;
+  float: left;
+  border-radius: 0.3vw;
+}
+.btm-menus button::after{
+  border: unset;
+}

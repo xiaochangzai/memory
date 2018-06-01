@@ -1,0 +1,17 @@
+<!--pages/selectPhotos/selectPhotos.wxml-->
+<view class='wrap'>
+  <view class='item'>
+    <text>所有相册</text>
+    <radioComponent checked="{{allSelected}}" bindchange="radioChange" style="float: right;margin-top:3.2vw;"></radioComponent>
+  </view>
+  <scroll-view class='all-photos'>
+    <view class='item' wx:for="{{photosList}}">
+      <text>{{item.name}}</text>
+      <radioComponent checked="{{item.checked}}" data-index="{{index}}" bindchange="radioChange" style="float: right;margin-top:3.2vw;"></radioComponent>
+    </view>
+  </scroll-view>
+
+  
+  <button class='submit' bindtap='asycSoon' wx:if="{{type == 'asyc'}}">立即同步</button>
+  <button class='submit' bindtap='submitPhotos' wx:else>确认</button>
+</view>

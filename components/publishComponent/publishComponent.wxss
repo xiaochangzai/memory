@@ -1,0 +1,247 @@
+/* pages/publishComponent/publishComponent.wxss */
+.pub-box{
+  width: 92.3vw;
+  min-height: 85vw; 
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-radius: 1.7vw;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+}
+.pub-box .tit{
+  height: 17vw;
+  box-sizing: border-box;
+  padding-top: 4.2vw;
+  padding-left: 4vw;
+}
+.pub-box .tit image.head{ 
+    width: 9.2vw;
+    height: 9.2vw;
+    display: block;
+    float: left;
+    border-radius: 4.6vw;
+    background-color: #2aa143;
+}
+.pub-box .tit .nick-box{
+  width: 70vw;
+  height: 12.9vw;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 4vw;
+}
+.pub-box .tit .nick-box .nick-name{
+  width: 66vw;
+  height: 5.5vw;
+  font-size: 3.3vw;
+  font-weight: bold;
+}
+.pub-box .tit .nick-box .place{
+  width: 66vw;
+  height: 5.5vw;
+  color: #808080;
+  font-size: 2.8vw;
+}
+.pub-box .tit image.tit-menu{
+  width: 3vw;
+  height: 6.7vw;
+  display: block;
+  float: left;
+  margin-top: 1.4vw;
+}
+.pub-box .message-box{
+  width: 92.3vw;
+  height: 8.8vw;
+  box-sizing: border-box;
+  padding: 2.5vw 2vw 0 3.5vw;
+  font-size: 3.3vw;
+}
+.pub-box .img-box{
+  width: 84.8vw;
+  min-height: 42vw;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+.pub-box .img-box .image{
+  width: 42.4vw;
+  height: 42.4vw;
+  overflow: hidden;
+  float: left;
+}
+.pub-box .img-box.size1 .image{
+  width: 84.8vw;
+  height: 84.8vw;
+}
+.pub-box .img-box.size2 .image{
+  width: 42.4vw;
+  height: 42.4vw;
+}
+.pub-box .img-box.size3 .image{
+  width: 28.2vw;
+  height: 28.2vw;
+}
+.pub-box .components{
+  width: 92.5vw;
+  box-sizing: border-box;
+  padding-top: 6vw; 
+}
+.pub-box .components .component-item{
+  width: 89vw;
+  height: 5.3vw;
+  box-sizing: border-box;
+  padding-left: 3.6vw;
+}
+.pub-box .components .component-item .nick-name{
+  height: 5.3vw;
+  font-size: 3.2vw;
+  font-weight: bold;
+  padding-right: 2vw;
+  float: left;
+  display: block;
+}
+.pub-box .components .component-item .content{
+  height: 5.3vw;
+  font-size: 3.2vw;
+  display: block;
+  float: left;
+}
+.pub-box .btm-box{
+  width: 84.8vw;
+  height: 18vw;
+  box-sizing: border-box;
+  padding-top: 6vw;
+  margin: 0 auto;
+}
+.pub-box .btm-box .agree{
+  width: 14.2vw;
+  height: 8vw;
+  box-sizing: border-box;
+  border: #cbcbcb 0.2vw solid;
+  border-radius: 4vw;
+  text-align: center;
+  float: left;
+}
+.pub-box .btm-box .agree.agreed{
+  background-color: #ffe502;
+  border-color: #ffe502;
+}
+.pub-box .btm-box .agree text{
+  width: 6.8vw;
+  height: 7.6vw;
+  line-height: 7.6vw;
+  color: #5a5a5a;
+  font-size: 2.8vw;
+  text-align: center;
+  display: block;
+  float: left;
+}
+.pub-box .btm-box .agree image{
+  width: 4vw;
+  height: 4.2vw;
+  display: block;
+  float: left;
+  margin-top: 1.2vw;
+}
+.pub-box .btm-box .talk{
+  width: 5.1vw;
+  height: 4.7vw;
+  display: block;
+  float: left;
+  margin-top: 1.5vw;
+  margin-left: 5.9vw;
+}
+.pub-box .btm-box .share{
+  width: 5.2vw;
+  height: 5.2vw;
+  display: block;
+  margin-top: 1.2vw;
+  float: right;
+}
+
+.modal-bg{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modal-bg.show{
+  animation: fadein .4s ease-out;
+}
+.modal-bg.show .bottom-menus{
+  animation: slideUp .4s ease-out;
+}
+.bottom-menus{
+  width: 100vw;
+  height: 94.4vw;
+  background-color: #ffffff;
+  border-radius: 4.4vw 4.4vw 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.bottom-menus .close{
+  width: 10.2vw;
+  height: 10.2vw;
+  margin: 0 auto;
+  position: fixed;
+  left: 44.9vw;
+  bottom: 101.2vw;
+  border-radius: 47.2vw;
+  border: #ffffff 0.4vw solid;
+  line-height: 9.2vw;
+  color: #ffffff;
+  text-align: center;
+  font-size: 10vw;
+  transform: rotate(45deg);
+  font-weight: lighter;
+}
+.bottom-menus .title{
+  width: 100vw;
+  height: 27.3vw;
+  box-sizing: border-box;
+  padding-left: 8vw;
+  padding-top: 11.4vw;
+  font-size: 5.7vw;
+  font-weight: bold;
+  color: #333333;
+}
+.bottom-menus .item{
+  width: 100vw;
+  height: 15.2vw;
+  box-sizing: border-box;
+  padding-left: 8vw;
+  line-height: 15.2vw;
+  font-size: 3.4vw;
+}
+.bottom-menus .item text{
+  width: 82.6vw;
+  height: 15.2vw;
+  display: block;
+  float: left;
+}
+.bottom-menus .item image{
+  width: 1.8vw;
+  height: 3.1vw;
+  margin-top: 6vw;
+}
+@keyframes slideUp{
+  0%{
+    bottom: -57.2vw;
+  }
+  100%{
+    bottom:0vw; 
+  }
+}
+@keyframes fadein{
+  0%{
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+  100%{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.hide{
+  display: none;
+}

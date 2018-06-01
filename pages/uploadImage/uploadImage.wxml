@@ -1,0 +1,33 @@
+<!--pages/uploadImage/uploadImage.wxml-->
+<view class='wrap'>
+  <view class='text-content'>
+    <image src='../../img/icon-edit.png'></image>
+    <textarea placeholder-class='placeholder' placeholder='留下美好回忆' maxlength='200' bindinput='inputMessage'></textarea>
+  </view>
+  <view class='location'>
+    <image class='icon-location' src='../../img/icon-location.png'></image>
+    <text>所在位置</text>
+    <image class='go' src='../../img/icon-go.png'></image>
+  </view>
+  <view class='location asyc' bindtap='asycOtherPhotos'>
+    <image class='icon-location' src='../../img/icon-asyc.png'></image>
+    <text>{{syncTit}}</text>
+    <image class='go' src='../../img/icon-go.png'></image>
+  </view>
+
+  <view class='photos-box' >
+    <view class='add-box' bindtap='addPhotos'>
+      <view class='add-circle'>+</view>
+      <text>继续添加照片</text>
+    </view>
+
+    <view class='image-box' wx:for="{{tempFiles}}">
+      <image src='{{item.path}}'></image>
+      <text bindtap='deleteImage' data-index='{{index}}'>+</text>
+    </view>
+    
+
+  </view>
+
+  <button class='start' bindtap='start'>开始上传</button>
+</view>

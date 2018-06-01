@@ -219,3 +219,183 @@
   font-size: 3.7vw;
   color: #656565;
 }
+.progress{
+  height: 14.4vw;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: 3vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+
+}
+.progress .title{
+  height: 7.3vw;
+  width: 94.2vw;
+  box-sizing: border-box;
+  padding-top: 1.4vw;
+  color: #1a1a1a;
+  font-size: 3.2vw;
+}
+.progress text{
+  float: right;
+  color: #7f7f7f;
+}
+.progress .progress-bar{
+  width: 94vw;
+  height: 1.4vw;
+  background-color: #d7d7d7;
+  border-radius: 0.7vw;
+}
+.progress .progress-bar .real-progress{
+  width: 50%;
+  height: inherit;
+  background-color: #65cc00;
+}
+.btm-knowabout{
+  height: 94.4vw;
+  width: 100vw;
+  background-color: #f1f1f1;
+}
+.btm-knowabout .to-bottom{
+  height: 17vw;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 5vw;
+  color: #909090;
+  font-size: 2.9vw;  
+}
+.btm-knowabout .name{
+  height: 3.7vw;
+  font-size: 2.8vw;
+  color: #727272;
+  text-align: center;
+}
+.btm-knowabout .descript{
+  height: 8.5vw;
+  font-size: 3vw;
+  color: #030303;
+  text-align: center;
+}
+.btm-knowabout button{
+  width: 64.2vw;
+  height: 8.7vw;
+  box-sizing: border-box;
+  border-radius: 4.35vw;
+  border: #a6a6a6 0.1vw solid;
+  display: block;
+  background-color: #f1f1f1;
+  margin: 0 auto;
+  padding: unset;
+}
+
+.btm-knowabout button::after{
+  border: unset;
+}
+.btm-knowabout button image{
+  width: 4.1vw;
+  height: 4.1vw;
+  display: block;
+  float: left;
+  margin-left: 21.3vw;
+  margin-top: 2.4vw;
+}
+.btm-knowabout button text{
+  width: 35.8vw;
+  height: 8.5vw;
+  box-sizing: border-box;
+  padding-left: 2.5vw;
+  line-height: 8.5vw;
+  font-size: 3.4vw;
+  color: #5c5c5c;
+  display: block;
+  float: left;
+  text-align: left;
+}
+.camera{
+  width: 17.3vw;
+  height: 17.3vw;
+  background-color: #fde500;
+  margin: 0 auto;
+  border-radius: 8.65vw;
+  box-sizing: border-box;
+  border: #ffffff 1vw solid;
+  padding-top: 2.6vw;
+  position: fixed;
+  bottom: 4vw;
+  left: 41.35vw;
+}
+.camera image{
+  width: 8.2vw;
+  height: 7vw;
+  display: block;
+  margin: 0 auto;
+}
+.camera text{
+  display: block;
+  height: 5.6vw;
+  padding-top: 0.8vw;
+  font-size: 2.7vw;
+  text-align: center;
+}
+.gray{
+  background-color: #f1f1f1;
+  padding-top: 3.5vw;
+}
+.gray .title{
+  width: 100vw;
+  height: 12.7vw;
+  box-sizing: border-box;
+  padding-top: 4.4vw;
+  padding-left: 6.4vw;
+}
+.gray .title .clock{
+  width: 3.1vw;
+  height: 4.6vw;
+  display: block;
+  float: left;
+}
+.gray .title text.timeline{
+  width: 21vw;
+  height: 8vw;
+  box-sizing: border-box;
+  padding-left: 3.7vw;
+  color: #151515;
+  display: block;
+  float: left;
+  font-size: 3.8vw;
+}
+.gray .title label{
+  width: 0.2vw;
+  height: 5vw;
+  display: block;
+  float: left;
+  background-color: #cbcbcb;
+}
+.gray .title .book{
+  width: 3.6vw;
+  height: 3.9vw;
+  display: block;
+  float: left;
+  margin-left: 6.2vw;
+  margin-top: 0.4vw;
+}
+.gray .title text.wall{
+  width: 17.7vw;
+  height: 7vw;
+  box-sizing: border-box;
+  padding-left: 3.2vw;
+  padding-top: 0.2vw;
+  font-size: 3.8vw;
+  display: block;
+  float: left;
+  color: #888888;
+}
+.gray .title .go{
+  width: 2vw;
+  height: 3.8vw;
+  display: block;
+  float: left;
+  margin-top: 0.6vw;
+}

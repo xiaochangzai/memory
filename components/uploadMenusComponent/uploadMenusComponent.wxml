@@ -1,0 +1,9 @@
+<view class="modal-bg {{isShow? 'show':''}}">
+  <view class='menus-box'>
+    <view class='item' bindtap='takePicthers'>拍照片</view>
+    <view class='item spec' bindtap='selectPhotos'>相册照片</view>
+    <view class='item' bindtap='takeVidio'>拍视频</view>
+    <view class='item spec' bindtap='selectVidios'>相册视频</view>
+    <view class='item' bindtap='close'><text>+</text></view>
+  </view>
+</view>

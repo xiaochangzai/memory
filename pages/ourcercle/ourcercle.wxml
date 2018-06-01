@@ -11,24 +11,43 @@
     <text>设置</text>
   </view>
 </view>
+
 <view class='item'>
-  <image class='cover-img' src='../../img/cercle-cover.jpg'></image>
+  <image class='cover-img' src='{{info.coverImage}}'></image>
   <view class='title'>
-    <text>我们的圈子</text>
+    <text>{{info.name}}</text>
     <image src='../../img/icon-edit.png'></image>
   </view>
   <view class='num-box'>
-    <text class='num'>1 人</text>
+    <text class='num'>{{info.peopleNum}} 人</text>
     <text class='line'></text>
-    <text class='num last-child'>0 张</text>
+    <text class='num last-child'>{{info.sumNum}} 张</text>
     <image class='go-right' src='../../img/icon-go-black.png'></image>
     <image class='head-img' src='../../img/headImg.jpg'></image>
   </view>
 </view>
+<view class='gray'>
+  <view class='title'>
+    <image class='clock' src='../../img/icon-clock2.png'></image>
+    <text class='timeline'>时间轴</text>
+    <label></label>
+    <image class='book' src='../../img/icon-book.png'></image>
+    <text class='wall'>照片墙</text>
+    <image class='go' src='../../img/icon-go.png'></image>
+  </view>
+  <publishComponent 
+    wx:for="{{publishList}}" 
+    info="{{item}}" 
+    pid="{{id}}" 
+    data-index="{{index}}" 
+    bindtotop="totop" binddelete="delete"></publishComponent>
+</view>
+
+
 <view class='bottom-box'>
   <view class='point-out'>您可以点击下方按钮【上传照片】</view>
   <view class='point-out'>也可以【邀请好友】加入相册</view>
-  <button class='upload'>
+  <button class='upload' bindtap='showMenu'>
     <image src='../../img/icon-upload.png'></image>
     <text>上传照片</text>
   </button>
@@ -38,4 +57,27 @@
   </button>
 </view>
 
+<view class='progress' wx:if="{{uploadding}}">
+  <view class='title'>
+    正在上传{{progressNum}}%
+    <text>上传中请勿退出</text>
+  </view>
+  <view class='progress-bar'>
+    <view class='real-progress' style='width:{{progressNum}}%'></view>
+  </view>
+</view>
 
+<view class='btm-knowabout'>
+  <view class='to-bottom'>到底了，亲~</view>
+  <view class='name'>一年共享相册</view>
+  <view class='descript'>我们自己的相册</view>
+  <button>
+    <image src='../../img/icon-know-about.png'></image>
+    <text>快速了解</text>
+  </button>
+</view>
+<view class='camera'>
+  <image src='../../img/icon-upload.png'></image>
+  <text>上传</text>
+</view>
+<uploadMenusComponent id="menus" pid="{{id}}"></uploadMenusComponent>

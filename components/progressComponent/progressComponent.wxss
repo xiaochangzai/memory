@@ -1,0 +1,35 @@
+/* components/progressComponent/progressComponent.wxss */
+.progress{
+  height: 14.4vw;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: 3vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+
+}
+.progress .title{
+  height: 7.3vw;
+  width: 94.2vw;
+  box-sizing: border-box;
+  padding-top: 1.4vw;
+  color: #1a1a1a;
+  font-size: 3.2vw;
+}
+.progress text{
+  float: right;
+  color: #7f7f7f;
+}
+.progress .progress-bar{
+  width: 94vw;
+  height: 1.4vw;
+  background-color: #d7d7d7;
+  border-radius: 0.7vw;
+}
+.progress .progress-bar .real-progress{
+  width: 50%;
+  height: inherit;
+  background-color: #65cc00;
+}

@@ -1,15 +1,20 @@
 {
   "pages": [
-    "pages/types/types",
     "pages/photos/photos",
-    "pages/active/active",
+    "pages/test/test",
+  
+    "pages/download/download",
     "pages/ourcercle/ourcercle",
+    "pages/selectPhotos/selectPhotos",
+    "pages/sharePublish/sharePublish",
     "pages/share/share",
+    "pages/uploadImage/uploadImage",
+    "pages/types/types",
+    "pages/active/active",
     "pages/clock/clock",
     "pages/my/my",
     "pages/index/index",
     "pages/logs/logs"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",

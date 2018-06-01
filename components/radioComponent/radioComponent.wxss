@@ -1,0 +1,20 @@
+/* pages/radioComponent/radioComponent.wxss */
+
+label.radio{
+  width: 4.2vw;
+  height: 4.2vw;
+  background-color: #979797;
+  border-radius: 2.1vw;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 0.8vw;
+  padding-left: 0.6vw;
+}
+label.radio image{
+  width: 2.8vw;
+  height: 2.8vw;
+  display: block;
+}
+label.radio.checked{
+  background-color: #fae00d;
+}

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "uploadMenusComponent": "../../components/uploadMenusComponent/uploadMenusComponent",
+    "radioComponent": "../../components/radioComponent/radioComponent",
+    "publishComponent":"../../components/publishComponent/publishComponent",
+    "progressComponent": "../../components/progressComponent/progressComponent",
+    "inputComponent": "../../components/inputComponent/inputComponent"
+  }
+}

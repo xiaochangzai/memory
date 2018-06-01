@@ -1,0 +1,23 @@
+<!--pages/download/download.wxml-->
+<progressComponent message="分享美好瞬间" id="progress"></progressComponent>
+<view class='title'>
+  已选择1张
+</view>
+<view class='content'>
+  <view class='image-box' wx:for="{{photoList}}">
+    <image src='{{item.path}}'></image>
+    <text class='{{item.checked?"checked" : ""}}' data-index="{{index}}" bindtap='toggleCheck'>√</text>
+  </view>
+</view>
+<view class='btm-menus'>
+  <button class='return' bindtap='cancle'>
+    <image src='../../img/icon-go.png'></image>
+    <text>返回</text>
+  </button>
+  <text class='check-box {{selectAll ? "checked":""}}' bindtap='checkAll'>√</text>
+  <label>全选</label>
+  <text class='cancle' bindtap='unCheckAll'>取消</text>
+  <button class='download-soon' bindtap='downloadAll' wx:if="{{type=='download'}}">立即下载</button>
+  <button class='download-soon' bindtap='asycAll' wx:if="{{type=='asyc'}}">立即同步</button>
+  <button class='download-soon' bindtap='delete' wx:if="{{type=='delete'}}">立即删除</button>
+</view>
