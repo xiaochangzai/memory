@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    placeholder: {
+      type: String,
+      value: ""
+    }
   },
 
   /**
@@ -41,9 +44,13 @@ Component({
      */
     input: function(e){
       this.setData({
-        value: e.detail.value
+        value: e.detail.value.trim()
       });
-    }
+    },
+    /**
+     * 啥也不干
+     */
+    donothing:function(){}
     
   }
 })

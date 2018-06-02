@@ -179,6 +179,7 @@ Component({
     send: function(e){
       console.log("用户点击发送！");
       console.log(e);
+
       //发送请求
       wx.request({
         url: api.addComments,
@@ -189,8 +190,15 @@ Component({
           parentId: 0
         },
         success: (res)=>{
-          console.log("============>");
-          console.log(res);
+          this.data.info.comments.push({
+            vrId: res.data.result,
+            content: e.detail.value,
+            nickName: app.globalData.userInfo.nickName
+          });
+
+          this.setData({
+            info: this.data.info
+          });
         },
         fail: ()=>{
 

@@ -88,9 +88,7 @@ Page({
    * 获取用户信息
    */
   agree: function(userInfo){
-    console.log("成功获取用户信息");
-    console.log(userInfo);
-    app.globalData.userInfo = userInfo;
+    app.globalData.userInfo = userInfo.detail.detail.userInfo;
   },
   /**
    * 获取用户相册

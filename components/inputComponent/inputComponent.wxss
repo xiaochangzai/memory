@@ -44,6 +44,10 @@
   margin-left: 3.9vw;
   font-size: 3.3vw;
 }
+.input button.canotuse{
+  background-color: #cecece;
+  color: #ffffff;
+}
 .input button::after{
   border: unset;
   padding: unset;

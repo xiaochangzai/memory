@@ -1,18 +1,20 @@
 // pages/clock/clock.js
+import api from '../../utils/api.js';
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    clockList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.getPublishs();
   },
 
   /**
@@ -62,5 +64,30 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  /**
+   * 获取发布时间列表
+   * 
+   */
+  getPublishs: function(){
+    wx.request({
+      url: api.getPublishLine,
+      data: {
+        userId: app.globalData.openId
+      },
+      success: (res)=>{
+          console.log("获取时刻列表！");
+          console.log(res);
+          this.setData({
+            clockList: res.data.result
+          });
+      },
+      fail: ()=>{
+
+      },
+      complete: ()=>{
+
+      }
+    })
   }
 })

@@ -1,0 +1,62 @@
+<!--pages/intophotos/intophotos.wxml-->
+<view class='title'>
+  <button>
+    <image src='../../img/icon-go-black.png'></image>
+    <text>进入相册</text>
+  </button>
+  <text class='name'>{{detail.name}}</text>
+</view>
+<scroll-view class='scroll' scroll-y="true">
+  <view class='user-tit'>
+    <image class='user-head' src='{{detail.headImg}}'></image>
+    <view class='info-center'>
+      <text class='nick-name'>{{detail.nickName}}</text>
+      <text class='time'>{{detail.createTime}}</text>
+    </view>
+    <image class='menu' src='../../img/icon-tit-menu.png' bindtap='showSubmenu'></image>
+  </view>
+  <view>
+    <image class='img-item' 
+      src='{{item}}' 
+      class='image' 
+      wx:for="{{detail.paths}}" 
+      wx:key="{{index}}" mode="widthFix"></image>
+  </view>
+  <view class='bottom-line'></view>
+  <view class='agree-box {{detail.agreed?"agreed":""}}' bindtap='agree'>
+    <image src='../../img/icon-agree.png'></image>
+  </view>
+  <view class='agree-text'>{{detail.agreeNum}}人点赞</view>
+  <view class='answer-item' wx:for="{{comments}}">
+    <view class='nick-name'>{{item.nickName}}:</view>
+      <view class='content'>{{item.content}}</view>
+    <view class='time-box'>
+      <text class='time'>{{item.createTime}}</text>
+      <image src='../../img/icon-delete.png' bindtap='delete' data-index="{{index}}"></image>
+  </view>
+  
+  </view>
+  <view class='bottom-qin'>到底了，亲~</view>
+</scroll-view>
+<view class='btm-box'>
+  <input placeholder='写评论...' bindfocus='talkfocus'></input>
+  <image class='talk' src='../../img/icon-talk2.png'></image>
+  <image class='agree' src='../../img/icon-agree2.png'></image>
+  <image class='share' src='../../img/icon-share2.png' bindtap='share'></image>
+</view>
+<view class='modal-bg {{showModal?"show":""}}' wx:if="{{showModal}}">
+  <view class='bottom-menus'>
+    <view class='title'>更多功能</view>
+    <view class='item' bindtap='downLoadPhotos'>
+      <text>原图下载</text>
+      <image src='../../img/icon-go.png'></image>
+    </view>
+    <view class='item' bindtap='delete'>
+      <text>删除</text>
+      <image src='../../img/icon-go.png'></image>
+    </view>
+    
+    <view class='close' bindtap='closeModal'>+</view>
+  </view>
+</view>
+<inputComponent id="input" bindsend="send" placeholder="对ta说点啥"></inputComponent>

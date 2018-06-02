@@ -1,7 +1,11 @@
 <!--components/inputComponent/inputComponent.wxml-->
-<view class='modal-bg' wx:if="{{isShow}}">
-  <view class='input'>
-  <input type='text' focus='{{isFocus}}' confirm-type="send" bindinput='input' bindconfirm="send"></input>
-  <button bindtap='send'>发送</button>
+<view class='modal-bg' wx:if="{{isShow}}" bindtap='hide'>
+  <view class='input' catchtap='donothing'>
+  <input type='text' 
+    focus='{{isFocus}}' 
+    confirm-type="send" 
+    bindinput='input' 
+    bindconfirm="send" placeholder='{{placeholder}}'></input>
+  <button bindtap='send' class='{{value.length > 0 ? "" : "canotuse"}}'>发送</button>
 </view>
 </view>

@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/photos/photos",
+    "pages/intophotos/intophotos",
     "pages/test/test",
-  
     "pages/download/download",
     "pages/ourcercle/ourcercle",
     "pages/selectPhotos/selectPhotos",

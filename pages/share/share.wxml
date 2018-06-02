@@ -1,17 +1,17 @@
 <!--pages/share/share.wxml-->
 <view class='header'>
-  <image class='header-bg' src='../../img/header-bg.png'></image>
+  <image class='header-bg' src='{{path}}'></image>
   <view class='modal-bg'>
     <view class='head-box'>
-      <image src='../../img/headImg.jpg'></image>
+      <image src='{{headImg}}'></image>
     </view>
-    <view class='nick-name'>我们的圈子</view>
+    <view class='nick-name'>{{name}}</view>
     <view class='xc'>这是我们的相册</view>
     <view class='xc'>我们都在</view>
     <view class='join-us'>你也加入吧</view>
   </view>
 </view>
-<button class='share'>
+<button class='share' open-type="share">
   <image src='../../img/icon-weixin.png'></image>
   <text>分享微信群/好友</text>
 </button>

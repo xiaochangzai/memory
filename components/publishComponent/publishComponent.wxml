@@ -13,7 +13,7 @@
     <view class='image' wx:for="{{info.paths}}" wx:key="{{index}}"><image src='{{item}}'></image></view>
   </view>
   <view class='components'>
-    <view class='component-item' wx:for="{{info.commments}}" data-id="{{item.vrId}}">
+    <view class='component-item' wx:for="{{info.comments}}" data-id="{{item.vrId}}">
       <text class='nick-name'>{{item.nickName}}:</text>
       <text class='content'>{{item.content}}</text>
     </view>

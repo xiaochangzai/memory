@@ -169,6 +169,7 @@ Page({
    * 点击立即下载
    */
   downloadAll: function(){
+    debugger;
     this.data.photoList.forEach((item)=>{
       if(item.checked){
         wx.downloadFile({
@@ -178,7 +179,8 @@ Page({
             wx.saveImageToPhotosAlbum({
             filePath: res.tempFilePath,
             success: (res) => {
-            
+              debugger;
+              console.log("下载成功！");
             },
             fail: () => {
 
@@ -255,7 +257,6 @@ Page({
   delete: function(){
     console.log("点击删除");
     this.getPaths();
-    debugger;
     wx.request({
       url: api.deletePublish,
       data: {

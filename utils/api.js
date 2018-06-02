@@ -13,7 +13,11 @@ var urls = {
   addTop: urlHeader + "addTop.do", // 置顶
   deletePublish: urlHeader + "deletePublish.do", // 删除
   agree: urlHeader + "agree.do", // 点赞
-  addComments: urlHeader + "addComments.do" // 评论
+  addComments: urlHeader + "addComments.do", // 评论
+  getPublishLine: urlHeader + "getPublishLine.do", // 时刻
+  getPublishDetail: urlHeader + "getPublishDetail.do", // 获取发布信息的详情
+  getCommentsByPubId: urlHeader + "getCommentsByPubId.do", // 获取发布记录的评论信息
+  deleteCommentById: urlHeader + "deleteCommentById.do" // 删除评论
 };
 
 module.exports = urls;
